@@ -17,7 +17,7 @@ int main(void)
 	}
 	else if (n == 0)
 	{
-	printf("%d 0 and is 0\n", n);
+	printf("0 and is 0\n);
 	}
 	else if (n < 6)
 	{
