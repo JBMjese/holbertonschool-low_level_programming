@@ -10,14 +10,14 @@ int main(void)
 
 	while (letra <= 'z')
 	{
-	putchar(letra);
-	letra++;
+		putchar(letra);
+		letra++;
 	}
-	letra= 'A';
+	letra = 'A';
 	while (letra <= 'Z')
 	{
-	putchar(letra);
-	letra++;
+		putchar(letra);
+		letra++;
 	}
 	putchar('\n');
 	return (0);
