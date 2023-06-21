@@ -6,7 +6,9 @@
 int main(void)
 {
 	char letra = 'a';
+
 	while (letra <= 'z')
+		
 	{
 	putchar(letra);
 	letra++;
