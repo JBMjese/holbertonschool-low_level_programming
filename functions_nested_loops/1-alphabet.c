@@ -5,15 +5,12 @@
  **/
 void printAlphabet(void)
 {
-	char letter;
-	for (letter = 'a'; letter <= 'z'; letter++)
+	int i;
+
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		_putchar(letter);
-	}	
-_putchar('\n');
-}
-int main(void)
-{
-	printAlphabet();
+		_putchar(i);
+	}
+	_putchar('\n');
 	return (0);
-}	
+}
