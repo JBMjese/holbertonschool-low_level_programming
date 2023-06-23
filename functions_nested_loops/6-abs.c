@@ -4,14 +4,14 @@
  *@c: The integer to be computed.
  * Return: The absolute value of the integer
  **/
-int _abs(int num)
+int _abs(int a)
 {
-	if (num < 0)
+	if (a < 0)
 	{
-		return (-num);
+		return (-a);
 	}
 	else
 	{
-		return (num);
+		return (a);
 	}
 }
