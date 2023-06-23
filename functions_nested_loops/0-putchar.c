@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include <main.h>
 /**
- *main - numbers of base 10
+ *main - _putchar
  *Return: Always 0.
  **/
 int main(void)
