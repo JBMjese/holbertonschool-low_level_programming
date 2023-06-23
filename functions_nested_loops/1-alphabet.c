@@ -3,7 +3,7 @@
  *main - alphabet, in lowercase
  *Return: Always 0.
  **/
-void printAlphabet(void)
+void print_alphabet(void)
 {
 	int i;
 
