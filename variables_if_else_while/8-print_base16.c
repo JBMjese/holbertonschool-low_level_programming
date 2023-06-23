@@ -5,11 +5,18 @@
  **/
 int main(void)
 {
-	char z;
+	int h;
 
-	for (z = 'z'; z >= 'a'; z--)
+	for (h = 0; h < 16; h++)
 	{
-		putchar(z);
+		if (h < 10)
+	{
+		putchar(h + '0');
+	}
+	else
+	{
+		putchar(h - 10 + 'a');
+	}
 	}
 putchar('\n');
 
