@@ -15,4 +15,4 @@ void jack_bauer(void)
 			printf("%02d:%02d\n", hour, minute);
 		}
 	}
-}	
+}
