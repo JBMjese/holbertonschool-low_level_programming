@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- * _isdigit - Checks for a digit 0-9
+ * _isdigit - Checks 
  * @c: The number to be checked
  * Return: 1 if the number is a digit, 0 otherwise
  */
-int _isdigit(int c)
+int _isupper(int c)
+
 {
-	if (c >= '0' && c <= '9')
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
