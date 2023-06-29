@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- ** _puts - prints a string
- **@str: pointer to string
-  **Return: 0
-  **/
+ * _puts - prints a string
+ *@str: pointer to string
+ *Return: 0
+ */
 void _puts(char *str)
 {
 	int c;
