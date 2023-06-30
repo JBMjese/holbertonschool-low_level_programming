@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
   ** _strlen - returns
   ** @s: Pointer to string to measure
   ** Return: Lenght of the string
   **/
+
 int _strlen(char *s)
 {
 	int i;
@@ -18,13 +20,16 @@ int _strlen(char *s)
 	}
 return (len);
 }
+
 /**
   ** _atoi - convert a string to an integer.
   ** @s: Pointer to string to translate
   ** Return: Int from string
-  **/
+ **/
+
 int _atoi(char *s)
 {
+
 	unsigned int i;
 	unsigned int len;
 	int ret;
