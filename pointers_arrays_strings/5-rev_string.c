@@ -6,26 +6,17 @@
   ** return: 0
   **/
 void rev_string(char *s)
-
 {
-	if (s == NULL)
-	{
-		return;
-	}
-	char *star = s;
-	char *end = s;
+	int length = strlen(s);
+	char *start = s;
+	char *end = s + length - 1;
 
-	while (*end != '\0')
-	{
-		end++;
-	}
-	end--;
 	while (start < end)
-	{
-		char f = *start;
-		*start = *end;
-		*end = f;
-		start++;
-		end--;
-	}
-}	
+		{
+			char temp = *start;
+			*start = *end;
+			*end = temp;
+			start++;
+			end--;
+		}
+}
