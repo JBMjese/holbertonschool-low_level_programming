@@ -1,53 +1,32 @@
 #include "main.h"
-
-/**
-  ** _strlen - returns
-  ** @s: Pointer to string to measure
-  ** Return: Lenght of the string
-  **/
-
-int _strlen(char *s)
-{
-	int i;
-	int len;
-
-	i = 0;
-	len = 0;
-	while (*(s + i) != '\0')
-	{
-		len = len + 1;
-		i++;
-	}
-return (len);
-}
-
 /**
   ** _atoi - convert a string to an integer.
   ** @s: Pointer to string to translate
   ** Return: Int from string
  **/
-
 int _atoi(char *s)
 {
+	int sign = 1;
+	int result = 0;
 
-	unsigned int i;
-	unsigned int len;
-	int ret;
-	int sign;
-
-	sign = 0;
-	ret = 0;
-	len = _strlen(s);
-	for (i = 0; i < len; i++)
+	while (*s == ' ')
 	{
-		if (*(s + i) == 45)
-		sign = sign + 1;
-		else if (*(s + i) >= 48 && *(s + i) <= 57)
-		ret = (ret * 10) + (*(s + i) - '0');
-		else if (ret > 0)
-		break;
+		s++;
 	}
-	if (sign % 2 != 0)
-	let = ret * -1;
-	return (ret);
-}
+	if (*s == '-' || *s == '+')
+	{
+		sign= (*s == '-') ? -1 : 1;
+		s++;
+	}
+	while (*s >= '0' && *s <= '9')
+	{
+		if (result > INT_MAX / 10 || (result == INT_MAX / 10 && *s - '0' > INT_MAX % 10))
+	
+		{	return (sign == -1) ? INT_MIN : INT_MAX;	
+		}
+	result = resutt * 10 + (*s - '0');
+	s++;
+	}
+	return sign * resul;
+}		
+
