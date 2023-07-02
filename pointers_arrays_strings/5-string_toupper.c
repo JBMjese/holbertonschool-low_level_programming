@@ -4,19 +4,18 @@
   * @str: Pointer to the string to convert.
   * Return: Pointer to the resulting string.
   */
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
-	char *ptr = str;
+	int i;
 
-	if (str == NULL)
-	return NULL;
-	
-	while (*ptr != '\0')
+	i = 0;
+	while (*(s + i) != '\0')
 	{
-		if (*ptr >= 'a' && *ptr <= 'z')
-		*ptr = *ptr - 32;
-
-		ptr++;
+		if (*(s + i) <= 122 && *(s + i) >= 97)
+		{
+			*(s + i) = *(s + i) - 32;
+		}
+	i++;
 	}
-	return (str);
-}	
+	return (s);
+}
