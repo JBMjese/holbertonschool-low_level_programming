@@ -1,9 +1,9 @@
 #include "main.h"
 /**
   ** reverse_array - reverses the content.
-  ** @a: Pointer to the array
-  ** @n: Number of elements in the array
-  ** Return:Always 0
+  * @a: array to reverse
+  * @n: number of elements of the array
+  * Return:Always 0
   **/
 void matriz_inversa(int *a, int n)
 {
