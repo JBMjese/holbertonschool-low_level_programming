@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.hi>
+#include <string.h>
 /**
   ** _strcat - Concatenates two strings
   ** @dest: Pointer to target string
@@ -18,10 +18,10 @@ char *_strcat(char *dest, char *src)
 	Cfdest = Cdest + Csrc;
 	i = 0;
 	while (Cdest <= Cfdest)
-		{
-			*(dest + Cdest) = *(src + i);
-			Cdest++;
-			i++;
-		}
+	{
+		*(dest + Cdest) = *(src + i);
+		Cdest++;
+		i++;
+	}
 	return (dest);
 }	
