@@ -1,31 +1,33 @@
 #include "main.h"
 /**
-  * cap_string - capitalizes all words of a string.
-  * @str: Pointer to the string to capitalize.
-  * Return: Pointer to the resulting string.
+  ** cap_string - capitalizes all words of a string.
+  ** @s: String to modify
+  ** Return: Pointer to modify string
   **/
- char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	char *ptr = str;
-	int capitalize_next = 1;
+	char sp[14] = {' ', '\t', '\n', ',', ';', '.',
+	'!', '?', '"', '(', ')', '{', '}'};
+	int i;
+	int j;
 
-	if (str == NULL)
-	return NULL;
-
-	while (*ptr != '\0')
+	i = 0;
+	j = 0;
+	if (i == 0 && *(s + i) >= 97 && *(s + i) <= 122)
+	*(s + i) = *(s + i) - 32;
+	while (*(s + i) != '\0')
 	{
-		if (capitalize_next && (*ptr >= 'a' && *ptr <= 'z'))
-		*ptr = *ptr - 32;
-
-		if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' || *ptr == ',' ||
-		*ptr == ';' || *ptr == '.' || *ptr == '!' || *ptr == '?' ||
-		*ptr == '"' || *ptr == '(' || *ptr == ')' || *ptr == '{' ||
-		*ptr == '}')
-		capitalize_next = 1;
-		else
-		capitalize_next = 0;
-		ptr++;
+		while (*(sp + j) != '\0')
+		{
+			if (*(s + i) == *(sp + j))
+			{
+				if (*(s + (i + 1)) >= 97 && *(s + (i + 1)) <= 122)
+				*(s + (i + 1)) = *(s + (i + 1)) - 32;
+			}
+			j++;
+		}
+		i++;
+		j = 0;
 	}
-	return str;
+	return (s);
 }
-
