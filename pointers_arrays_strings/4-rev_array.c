@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-  ** reverse_array - reverses the content.
-  * @a: array to reverse
-  * @n: number of elements of the array
-  * Return:Always 0
+  ** reverse_array - reverses the content
+  ** @a: array to reverse
+  ** @n: number of elements of the array
+  ** Return: Always 0
   **/
-void matriz_inversa(int *a, int n)
+void reverse_array(int *a, int n);
 {
 	int c;
 	int i;
