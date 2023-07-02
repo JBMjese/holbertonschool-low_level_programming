@@ -3,22 +3,21 @@
   ** reverse_array - reverses the content.
   ** @a: Pointer to the array
   ** @n: Number of elements in the array
-  **
-  ** Return: None
+  ** Return:Always 0
   **/
 void matriz_inversa(int *a, int n)
 {
-	int start = 0;
-	int end = n - 1:
-	int temp;
+	int c;
+	int i;
 
-	while (start < end)
+	i = 0;
+	c = 0;
+	while (i <= n && n > 0)
 	{
-		temp = a[start];
-		a[start] = a[end];
-		a[end] = temp;
-
-		start++;
-		end--;
+		c = *(a + i);
+		*(a + i) = *(a + (n - 1));
+		*(a + (n - 1)) = c;
+		i++;
+		n--;
 	}
-}	
+}
