@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strstr - Locates a substring.
  * @haystack: Pointer to the string to be searched.
