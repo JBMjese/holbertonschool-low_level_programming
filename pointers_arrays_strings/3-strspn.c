@@ -7,27 +7,24 @@
   */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int count = 0;
-	int match;
+	int i;
+	int j;
+	unsigned int c;
 
-	while (*s != '\0')
+	c = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		match = 0;
-		while (*accept != '\0')
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (*s == *accept)
+			if (s[i] == accept[j])
 			{
-				match = 1;
+				c += 1;
 				break;
 			}
-			accept++;
 		}
-		if (match == 0)
+		if (accept[j] == '\0')
 		break;
-		count++;
-		s++;
-		accept = accept - count;
 	}
-	return (count);
+	return (c);
 }
-
