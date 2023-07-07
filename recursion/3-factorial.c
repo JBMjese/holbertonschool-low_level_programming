@@ -3,14 +3,14 @@
 /**
   ** factorial - Returns the length of a string.
   ** Return: 0
-  **@n: number for operation 
+  **@n: number for operation
   **/
 int factorial(int n)
 {
-	if (n < 0 )
-	return -1;
+	if (n < 0)
+	return (-1);
 	else if (n == 0)
-	return 1;
+	return (1);
 	else
 	return (n * factorial(n -1));
-}	
+}
