@@ -8,14 +8,14 @@
 int prm(int n, int i)
 {
 	if (n % i == 0 && i != n)
-	{	
+	{
 		return (0);
-	}	
+	}
 	else if (i < n)
-	{	
+	{
 		return (prm(n, i + 1));
-	}	
-	else
+	}
+		else
 		return (1);
 }
 /**
