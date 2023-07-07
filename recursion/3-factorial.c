@@ -3,7 +3,7 @@
 /**
   ** factorial - Returns the length of a string.
   ** Return: 0
-  **@s: Pointer
+  **@n: number for operation 
   **/
 int factorial(int n)
 {
