@@ -7,14 +7,16 @@
   */
 int prm(int n, int i)
 {
-	if (i * i > n)
-	{	
-		return (1);
-	}	
-	if (n % i == 0)
+	if (n % i == 0 && i != n)
 	{	
 		return (0);
 	}	
+	else if (i < n)
+	{	
+		return (prm(n, i + 1));
+	}	
+	else
+		return (1);
 }
 /**
   * is_prime_number - returns 1 if the input integer is a prime number,
