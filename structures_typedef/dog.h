@@ -14,4 +14,4 @@ typedef struct dog
 
 }dog_t;
 
-#endifi
+#endif
