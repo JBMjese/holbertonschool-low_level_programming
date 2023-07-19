@@ -3,7 +3,7 @@
 
 /**
   * init_dog - initialize a variable of dog
-  * @struct dog - struture of a dog
+  * @dog - struture of a dog
   * @d: Struct dog variable
   * @name: name
   * @age: age
