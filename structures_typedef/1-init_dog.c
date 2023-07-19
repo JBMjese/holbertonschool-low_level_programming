@@ -3,7 +3,7 @@
 #include "dog.h"
 
 /**
-  * init dog - initialize a variable of dog
+  * init_dog - initialize a variable of dog
   * @d:variable
   * @dog :variable
   * @name: name
