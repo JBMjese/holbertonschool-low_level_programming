@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-  ** struct dog - struture of a dog
+  ** init_dog - initialize a variable of a dog
+  * @d: Struct dog variable
   * @name: name
   * @age: age
   * @owner: owner
