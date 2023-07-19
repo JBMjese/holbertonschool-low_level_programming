@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "dog.h"
 
 /**
-  * struct dog - initialize a variable of dog
+  * init dog - initialize a variable of dog
+  * @d:variable
+  * @dog :variable
   * @name: name
   * @age: age
   * @owner: owner name
