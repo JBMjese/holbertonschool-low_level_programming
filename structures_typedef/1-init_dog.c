@@ -5,7 +5,6 @@
 /**
   * init_dog - initialize a variable of dog
   * @d:variable
-  * @dog :variable
   * @name: name
   * @age: age
   * @owner: owner name
