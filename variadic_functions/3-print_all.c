@@ -40,7 +40,7 @@ void print_all(const char * const format, ...)
 			printf("%f", va_arg(vt, double)), c = 1;
 			break;
 			case 's':
-			str = va_arg(vt, char *), c = 1;
+			jbm = va_arg(vt, char *), c = 1;
 			if (!jbm)
 			{
 				printf("(nil)");
