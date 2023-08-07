@@ -23,4 +23,4 @@ unsigned int binary_to_uint(const char *b)
 		total += power;
 	}
 	return (total);
-
+}
