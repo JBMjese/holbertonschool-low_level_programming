@@ -7,9 +7,8 @@ void print_binary(unsigned long int n)
 {
 	if (n == 0)
        	{
-		printf("0");
 		return;
 	}
 	print_binary(n / 2);
-	printf("%d", n % 2);
+	_putchar("%d", n % 2);
 }
