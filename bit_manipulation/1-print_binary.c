@@ -5,10 +5,23 @@
   */
 void print_binary(unsigned long int n)
 {
+	unsigned long int aux;
+	int power;
+
+	aux = n;
+	power = 0;
 	if (n == 0)
-       	{
-		return;
+	_putchar('0');
+	while (aux > 0)
+	{
+		power++;
+		aux = aux >> 1;
 	}
-	print_binary(n / 2);
-	_putchar("%d", n % 2);
+	while (power > 0)
+	{
+		aux = n >> (power - 1);
+		_putchar((aux & 1) + '0');
+		aux = n;
+		power--;
+	}
 }
